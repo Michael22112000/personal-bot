@@ -292,4 +292,4 @@ String.prototype.toHHMMSS = function () {
 }
 
 //login with this shitty code
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
