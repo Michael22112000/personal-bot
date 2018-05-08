@@ -1,0 +1,14 @@
+
+{
+  "name": "RainbowBot",
+  "description": "rain",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "11.3.2",
+    "request": "2.81.0"
+  }
+}
