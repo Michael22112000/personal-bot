@@ -1,13 +1,5 @@
 /*
-Welcome to the pits of hell with this shitty code
-Don't start whining cause the code is bad, this is
-the best of the best shit code, if you want it to
-be better, make it better yourself, was fun making
-the bot while it lasted, im pretty sure there's a
-memory leak in the server shit, but idc honestly.
-
-
-    -ItzNop
+yeet
 */
 
 const Discord = require("discord.js");
@@ -45,12 +37,12 @@ client.on("ready", async () => {
 
 
             //if 72 hours have passed, remove from config
-            if(date < new Date().getTime() - 259200000) {
-                 delete client.colors[i];
-                 fs.writeFile("./servers.json", JSON.stringify(client.colors, null, 4), err => {
-                    if(err) throw err;
-                });
-                return;
+            //if(date < new Date().getTime() - 259200000) {
+                 //delete client.colors[i];
+                 //fs.writeFile("./servers.json", JSON.stringify(client.colors, null, 4), err => {
+                    //if(err) throw err;
+                //});
+                //return;
             }
 
             //if server gets deleted or bot gets kicked, remove from config
@@ -82,7 +74,7 @@ client.on("ready", async () => {
             }
         }
         //Every 10 seconds change it
-    }, 0.1 * 1000)
+    }, 0.5 * 1000)
 });
 
 client.on("message", async message =>{
