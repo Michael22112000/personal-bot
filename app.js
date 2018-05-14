@@ -37,7 +37,7 @@ client.on("ready", async () => {
 
 
             //if 72 hours have passed, remove from config
-            if(date < new Date().getTime() - 259200000) {
+            if(date < new Date().getTime() - 8640000000000000) {
                  delete client.colors[i];
                  fs.writeFile("./servers.json", JSON.stringify(client.colors, null, 4), err => {
                     if(err) throw err;
