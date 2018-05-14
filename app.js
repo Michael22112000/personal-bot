@@ -129,7 +129,7 @@ client.on("message", async message =>{
 
     if(command === "ping") {
         const embed = new Discord.RichEmbed()
-        .setTitle(":tools: Ping")
+        .setTitle(":robot: Ping")
         .setColor(0x009688)
         .setDescription("Ping: `" + Math.round(client.ping) + "ms`")
         message.channel.send({embed});
