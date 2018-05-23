@@ -15,7 +15,7 @@ client.on("ready", async () => {
     console.log(`Logged in as ${client.user.tag}!`);
 
     setInterval(function() {
-        client.user.setPresence({ game: { name: "r^help | Servers: " + client.guilds.size + "| u wot?", url: "https://pornhub.com", type: 1 } });
+        client.user.setPresence({ game: { name: "r^help | Servers: " + client.guilds.size + " | u wot?", url: "https://pornhub.com", type: 1 } });
     //Update every 30 seconds
     }, 30 * 1000);
 
