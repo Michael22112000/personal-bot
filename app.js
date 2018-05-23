@@ -15,7 +15,7 @@ client.on("ready", async () => {
     console.log(`Logged in as ${client.user.tag}!`);
 
     setInterval(function() {
-        client.user.setPresence({ game: { name: "c!help | " + client.guilds.size + " Servers! | https://discord.gg/QYGMzmN", url: "https://discord.gg/QYGMzmN", type: 1 } });
+        client.user.setPresence({ game: { name: "c!help | " + client.guilds.size + " u wot?", url: "https://pornhub.com", type: 1 } });
     //Update every 30 seconds
     }, 30 * 1000);
 
@@ -97,16 +97,16 @@ client.on("message", async message =>{
         .setColor(0x009688)
         .setDescription("Shows commands for the bot!")
         .addField(":bulb: General commands", 
-        "**`c!rainbow`** - Taste the rainbow!\n" + 
-        "**`c!ping`** - Why is the bot slow?\n" + 
-        "**`c!stats`** - Bot's stats!")
+        "**`c!rainbow`** - duh wut do u think this does?\n" + 
+        "**`c!ping`** - rococks ping\n" + 
+        "**`c!stats`** - fortnut stats??")
 
         .addField(":skull: Bot's owner commands" ,
-        "**`c!eval`** - Tasty code!\n" +
-        "**`c!createInvite`** - Creates invites for servers!")
+        "**`c!eval`** - uh nope\n" +
+        "**`c!createInvite`** - invite noobs")
 
         .addField(":thinking: Suggestions", 
-        "Please suggest more commands for this bot, also you can join the offical discord! https://discord.gg/QYGMzmN")
+        "no thanks")
         message.channel.send({embed});
 
     }
