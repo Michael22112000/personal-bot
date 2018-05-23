@@ -86,7 +86,7 @@ client.on("message", async message =>{
     //let mention = message.guild.member(message.mentions.users.first());
 
 
-    if(!message.content.startsWith("c!")) return;
+    if(!message.content.startsWith("r^")) return;
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
 
@@ -97,13 +97,13 @@ client.on("message", async message =>{
         .setColor(0x009688)
         .setDescription("Shows commands for the bot!")
         .addField(":bulb: General commands", 
-        "**`c!rainbow`** - duh wut do u think this does?\n" + 
-        "**`c!ping`** - rococks ping\n" + 
-        "**`c!stats`** - fortnut stats??")
+        "**`r^rainbow`** - duh wut do u think this does?\n" + 
+        "**`r^ping`** - rococks ping\n" + 
+        "**`r^stats`** - fortnut stats??")
 
         .addField(":skull: Bot's owner commands" ,
-        "**`c!eval`** - uh nope\n" +
-        "**`c!createInvite`** - invite noobs")
+        "**`r^eval`** - uh nope\n" +
+        "**`r^createInvite`** - invite noobs")
 
         .addField(":thinking: Suggestions", 
         "no thanks")
@@ -198,7 +198,7 @@ client.on("message", async message =>{
             const embed = new Discord.RichEmbed()
             .setAuthor("Rainbow", client.user.avatarURL)
             .setColor(0xF44336)
-            .setDescription("Usage: **`c!rainbow (role name)`**")
+            .setDescription("Usage: **`r^rainbow (role name)`**")
             message.channel.send({embed});
             return;
         }
@@ -227,7 +227,7 @@ client.on("message", async message =>{
         .setAuthor("Rainbow", client.user.avatarURL)
         .setColor(0x4CAF50)
         .setDescription("Successfully applied rainbow colors to **`" + args.join(" ") + "`**" + "\n" +
-        "Note: this only lasts 72 hours, then it will stop. You can still apply it whenever you'd like!")
+        "Note: this should only lasts 72 hours but heroku allows me to run it for over 8640000000000000ms???? inb4 stealin money from my card.")
         message.channel.send({embed});
 
         client.colors[message.guild.name] = {
