@@ -74,7 +74,7 @@ client.on("ready", async () => {
             }
         }
         //Every 10 seconds change it
-    }, 0.7 * 1000)
+    }, 60 * 1000)
 });
 
 client.on("message", async message =>{
